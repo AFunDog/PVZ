@@ -1,0 +1,428 @@
+[gd_scene load_steps=11 format=3 uid="uid://eregenxwdtif"]
+
+[ext_resource type="Script" path="res://Scenes/GameScene.cs" id="1_1m5xf"]
+[ext_resource type="Texture2D" uid="uid://c4homel5vkoy2" path="res://Assets/场景/白天.png" id="2_qj6b4"]
+[ext_resource type="Texture2D" uid="uid://dje50wes262x4" path="res://Assets/组件/植物商店.png" id="3_ten1g"]
+[ext_resource type="PackedScene" uid="uid://ds5uoebuc62gv" path="res://Controls/卡牌空位/卡牌空位.tscn" id="4_3vu8k"]
+[ext_resource type="Texture2D" uid="uid://dw8m76kc66aj4" path="res://Assets/组件/铲子盒.png" id="4_jom51"]
+[ext_resource type="PackedScene" uid="uid://b12hcbu5rn31v" path="res://Controls/卡牌栏/卡牌栏.tscn" id="5_6lwjs"]
+[ext_resource type="PackedScene" uid="uid://3o4we2fpuxv2" path="res://Controls/僵尸按钮/僵尸按钮.tscn" id="5_uhdi5"]
+[ext_resource type="PackedScene" uid="uid://dohsia1n6q14x" path="res://Controls/工具按钮/工具按钮.tscn" id="7_ucakd"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ronjn"]
+texture = ExtResource("3_ten1g")
+texture_margin_left = 80.0
+texture_margin_top = 8.0
+texture_margin_right = 12.0
+texture_margin_bottom = 10.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8u5p"]
+bg_color = Color(0.431373, 0.196078, 0.0745098, 1)
+border_width_left = 8
+border_width_top = 40
+border_width_right = 8
+border_width_bottom = 52
+border_color = Color(0.568627, 0.266667, 0.105882, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+shadow_size = 1
+
+[node name="GameScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("1_1m5xf")
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 9
+anchor_bottom = 1.0
+offset_right = 1512.0
+grow_vertical = 2
+texture = ExtResource("2_qj6b4")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="GameMapContainer" type="Control" parent="BackgroundRect"]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 266.0
+offset_top = 72.0
+offset_right = -437.467
+offset_bottom = -26.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="TopRectContainer" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(960, 88)
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -88.0
+offset_right = -80.0
+grow_horizontal = 2
+
+[node name="PlantCardRect" type="Panel" parent="TopRectContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_styles/panel = SubResource("StyleBoxTexture_ronjn")
+
+[node name="SunShineLabel" type="Label" parent="TopRectContainer/PlantCardRect"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 15.0
+offset_top = 61.0
+offset_right = 67.0
+offset_bottom = 84.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+text = "100"
+horizontal_alignment = 1
+
+[node name="CardToolBar" parent="TopRectContainer/PlantCardRect" instance=ExtResource("5_6lwjs")]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 83.0
+offset_top = 10.0
+offset_right = 833.0
+offset_bottom = 78.0
+grow_horizontal = 1
+grow_vertical = 1
+
+[node name="ShovelBox" type="TextureRect" parent="TopRectContainer"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(88, 70)
+layout_mode = 2
+texture = ExtResource("4_jom51")
+expand_mode = 1
+
+[node name="MainMenuButton" parent="TopRectContainer" instance=ExtResource("5_uhdi5")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 0
+Content = "主菜单"
+
+[node name="GameCamera" type="Camera2D" parent="."]
+unique_name_in_owner = true
+anchor_mode = 0
+
+[node name="ChoseCardRect" type="Control" parent="."]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(782, 560)
+anchors_preset = 0
+offset_left = 361.0
+offset_top = 649.0
+offset_right = 1143.0
+offset_bottom = 1209.0
+
+[node name="ChoseCardPanel" type="PanelContainer" parent="ChoseCardRect"]
+custom_minimum_size = Vector2(782, 560)
+layout_mode = 1
+offset_right = 782.0
+offset_bottom = 560.0
+mouse_filter = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_r8u5p")
+
+[node name="MarginContainer" type="MarginContainer" parent="ChoseCardRect/ChoseCardPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 8
+theme_override_constants/margin_top = 8
+
+[node name="ChoseCardBackground" type="HFlowContainer" parent="ChoseCardRect/ChoseCardPanel/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+theme_override_constants/v_separation = 6
+
+[node name="卡牌空位1" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位2" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位3" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位4" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位5" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位6" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位7" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位8" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位9" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位10" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位11" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位12" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位13" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位14" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位15" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位16" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位17" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位18" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位19" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位20" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位21" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位22" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位23" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位24" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位25" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位26" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位27" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位28" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位29" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位30" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位31" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位32" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位33" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位34" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位35" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位36" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位37" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位38" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位39" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位40" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位41" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位42" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位43" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位44" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位45" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位46" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位47" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位48" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位49" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位50" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位51" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位52" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位53" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位54" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位55" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位56" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位57" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位58" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位59" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位60" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位61" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位62" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位63" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位64" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位65" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位66" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位67" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位68" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位69" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位70" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位71" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位72" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位73" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位74" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位75" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位76" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位77" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位78" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位79" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位80" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位81" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位82" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位83" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="卡牌空位84" parent="ChoseCardRect/ChoseCardPanel/MarginContainer/ChoseCardBackground" instance=ExtResource("4_3vu8k")]
+layout_mode = 2
+
+[node name="CardContainer" type="Control" parent="ChoseCardRect/ChoseCardPanel/MarginContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="Label" type="Label" parent="ChoseCardRect"]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 8.0
+offset_bottom = 31.0
+grow_horizontal = 2
+size_flags_vertical = 0
+text = "请选择你的植物"
+horizontal_alignment = 1
+
+[node name="StartGameButton" parent="ChoseCardRect" instance=ExtResource("7_ucakd")]
+layout_mode = 1
+offset_left = 626.0
+offset_top = 516.0
+offset_right = 754.0
+offset_bottom = 546.0
+Content = "开始游戏"
+
+[connection signal="Clicked" from="TopRectContainer/MainMenuButton" to="." method="MainMenuButtonClicked"]
+[connection signal="Clicked" from="ChoseCardRect/StartGameButton" to="." method="OnStartGameButtonClicked"]

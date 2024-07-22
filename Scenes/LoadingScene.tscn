@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=3 uid="uid://bq2a1jlnpk0lt"]
+
+[ext_resource type="Script" path="res://Scenes/LoadingScene.cs" id="1_uev5o"]
+[ext_resource type="Texture2D" uid="uid://w15td3ips0pi" path="res://Assets/进度/FlagMeterEmpty.png" id="2_17kji"]
+[ext_resource type="Texture2D" uid="uid://43le4cpax5xh" path="res://Assets/进度/FlagMeterFull.png" id="3_nylmq"]
+
+[node name="LoadingScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_uev5o")
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -20.0
+offset_top = -40.0
+offset_right = 20.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="LoadingProgressBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -78.5
+offset_top = -40.0
+offset_right = 78.5
+grow_horizontal = 2
+grow_vertical = 0
+texture_under = ExtResource("2_17kji")
+texture_progress = ExtResource("3_nylmq")

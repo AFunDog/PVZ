@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://ds5uoebuc62gv"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bo2ea"]
+bg_color = Color(0.392157, 0.392157, 0.392157, 0.176471)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
+[node name="卡牌空位" type="Panel"]
+custom_minimum_size = Vector2(48, 68)
+offset_right = 48.0
+offset_bottom = 68.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_bo2ea")

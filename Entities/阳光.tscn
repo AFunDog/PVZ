@@ -1,0 +1,148 @@
+[gd_scene load_steps=32 format=3 uid="uid://dhhvaah2cdfhl"]
+
+[ext_resource type="Texture2D" uid="uid://yhv4rxp14mka" path="res://Assets/组件/阳光/阳光_0.png" id="1_jpdr8"]
+[ext_resource type="Texture2D" uid="uid://b8lalominlmv3" path="res://Assets/组件/阳光/阳光_1.png" id="2_donqp"]
+[ext_resource type="Texture2D" uid="uid://cbs364ab8agj1" path="res://Assets/组件/阳光/阳光_2.png" id="3_ygqag"]
+[ext_resource type="Texture2D" uid="uid://btmjmhrg0x6m6" path="res://Assets/组件/阳光/阳光_3.png" id="4_2uo4i"]
+[ext_resource type="Texture2D" uid="uid://dj3hx0f2ywvc" path="res://Assets/组件/阳光/阳光_4.png" id="5_v6kji"]
+[ext_resource type="Texture2D" uid="uid://4sts8aihu6cs" path="res://Assets/组件/阳光/阳光_5.png" id="6_w7t5f"]
+[ext_resource type="Texture2D" uid="uid://jl35oyk8yf4b" path="res://Assets/组件/阳光/阳光_6.png" id="7_ndswi"]
+[ext_resource type="Texture2D" uid="uid://b1etymwj18mkh" path="res://Assets/组件/阳光/阳光_7.png" id="8_eaqbe"]
+[ext_resource type="Texture2D" uid="uid://dgy8baqjp2nsq" path="res://Assets/组件/阳光/阳光_8.png" id="9_305mi"]
+[ext_resource type="Texture2D" uid="uid://66rqbjroljgw" path="res://Assets/组件/阳光/阳光_9.png" id="10_6yc5f"]
+[ext_resource type="Texture2D" uid="uid://qu25p5yf3rbj" path="res://Assets/组件/阳光/阳光_10.png" id="11_ehvjo"]
+[ext_resource type="Texture2D" uid="uid://bnxgctpwagn6w" path="res://Assets/组件/阳光/阳光_11.png" id="12_e5lf7"]
+[ext_resource type="Texture2D" uid="uid://svei78454a37" path="res://Assets/组件/阳光/阳光_12.png" id="13_cmhlb"]
+[ext_resource type="Texture2D" uid="uid://c7lnkvly7qjkb" path="res://Assets/组件/阳光/阳光_13.png" id="14_rhry8"]
+[ext_resource type="Texture2D" uid="uid://dnwpni5ml7xox" path="res://Assets/组件/阳光/阳光_14.png" id="15_by2la"]
+[ext_resource type="Texture2D" uid="uid://blpb7bgld01rl" path="res://Assets/组件/阳光/阳光_15.png" id="16_jqhlh"]
+[ext_resource type="Texture2D" uid="uid://bnfxupghqnb0e" path="res://Assets/组件/阳光/阳光_16.png" id="17_cu0bt"]
+[ext_resource type="Texture2D" uid="uid://sy2n0vhwq0vg" path="res://Assets/组件/阳光/阳光_17.png" id="18_th7gx"]
+[ext_resource type="Texture2D" uid="uid://bg6edww3tsd7u" path="res://Assets/组件/阳光/阳光_18.png" id="19_okniu"]
+[ext_resource type="Texture2D" uid="uid://xdb6rtvnov1w" path="res://Assets/组件/阳光/阳光_19.png" id="20_hsbws"]
+[ext_resource type="Texture2D" uid="uid://bsbgyyimqoqjl" path="res://Assets/组件/阳光/阳光_20.png" id="21_817wt"]
+[ext_resource type="Texture2D" uid="uid://cntg872yo0gum" path="res://Assets/组件/阳光/阳光_21.png" id="22_ymc8v"]
+[ext_resource type="Texture2D" uid="uid://gxq6784ne3wn" path="res://Assets/组件/阳光/阳光_22.png" id="23_das38"]
+[ext_resource type="Texture2D" uid="uid://cucextl6i736t" path="res://Assets/组件/阳光/阳光_23.png" id="24_ns8fo"]
+[ext_resource type="Texture2D" uid="uid://c0etifdpdp725" path="res://Assets/组件/阳光/阳光_24.png" id="25_xrigq"]
+[ext_resource type="Texture2D" uid="uid://2n3iib201e1y" path="res://Assets/组件/阳光/阳光_25.png" id="26_i8043"]
+[ext_resource type="Texture2D" uid="uid://cuu561qruycot" path="res://Assets/组件/阳光/阳光_26.png" id="27_whfhc"]
+[ext_resource type="Texture2D" uid="uid://3npxdct55q43" path="res://Assets/组件/阳光/阳光_27.png" id="28_8es8y"]
+[ext_resource type="Texture2D" uid="uid://b23smoya1erxt" path="res://Assets/组件/阳光/阳光_28.png" id="29_0b8em"]
+[ext_resource type="Script" path="res://Entities/阳光.cs" id="30_51ejo"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_www2t"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_jpdr8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_donqp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ygqag")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2uo4i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_v6kji")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_w7t5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ndswi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_eaqbe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_305mi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_6yc5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_ehvjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_e5lf7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_cmhlb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rhry8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_by2la")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_jqhlh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_cu0bt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_th7gx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_okniu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_hsbws")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_817wt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_ymc8v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_das38")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ns8fo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_xrigq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i8043")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_whfhc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_8es8y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0b8em")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="阳光" type="Control"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 3
+anchors_preset = 0
+offset_left = -40.0
+offset_top = -40.0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("30_51ejo")
+
+[node name="ClickMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_www2t")
+autoplay = "default"
+frame = 2
+frame_progress = 0.504039
+offset = Vector2(40, 40)

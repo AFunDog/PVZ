@@ -1,0 +1,35 @@
+[gd_scene load_steps=5 format=3 uid="uid://bi5gplcvwlogr"]
+
+[ext_resource type="Texture2D" uid="uid://3uk5ya3yqup2" path="res://Assets/卡牌/向日葵.png" id="1_7cr37"]
+[ext_resource type="Script" path="res://Controls/卡牌/卡牌.cs" id="2_1tfep"]
+
+[sub_resource type="Gradient" id="Gradient_5wv70"]
+interpolation_mode = 1
+offsets = PackedFloat32Array(0)
+colors = PackedColorArray(0, 0, 0, 0.392157)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_prj7c"]
+gradient = SubResource("Gradient_5wv70")
+width = 48
+height = 68
+fill_from = Vector2(0, 1)
+
+[node name="卡牌" type="TextureRect"]
+clip_contents = true
+custom_minimum_size = Vector2(48, 68)
+offset_right = 48.0
+offset_bottom = 68.0
+texture = ExtResource("1_7cr37")
+expand_mode = 1
+script = ExtResource("2_1tfep")
+
+[node name="CdBar" type="TextureProgressBar" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+fill_mode = 2
+texture_progress = SubResource("GradientTexture2D_prj7c")

@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://cw8bhffm5b73y"]
+
+[ext_resource type="Texture2D" uid="uid://bxiyxduwywnxj" path="res://Assets/组件/按钮_僵尸.png" id="1_myab8"]
+
+[resource]
+texture = ExtResource("1_myab8")
+texture_margin_left = 12.0
+texture_margin_top = 6.0
+texture_margin_right = 12.0
+texture_margin_bottom = 8.0

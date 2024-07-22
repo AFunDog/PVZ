@@ -1,0 +1,50 @@
+[gd_scene load_steps=8 format=3 uid="uid://888awucy4t4h"]
+
+[ext_resource type="Texture2D" uid="uid://27l2ebq5m1fp" path="res://Assets/场景/菜单背景.png" id="1_nau4t"]
+[ext_resource type="Script" path="res://Scenes/MainScene.cs" id="1_qh31e"]
+[ext_resource type="Texture2D" uid="uid://cgjb5so6rdmoh" path="res://Assets/按钮/冒险_正常.png" id="2_h4v1s"]
+[ext_resource type="Texture2D" uid="uid://b76caqjonx1ch" path="res://Assets/按钮/冒险_高亮.png" id="3_tqjs2"]
+[ext_resource type="BitMap" uid="uid://b8djh40rkw7of" path="res://Assets/按钮/冒险_mask.png" id="4_s3ldw"]
+[ext_resource type="AudioStream" uid="uid://x0dkab6qshyv" path="res://Music/startUIBgm.mp3" id="6_gbtnl"]
+[ext_resource type="AudioStream" uid="uid://dnvuoxfdqcmgh" path="res://Music/tab.wav" id="7_wej1d"]
+
+[node name="MainScene" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qh31e")
+
+[node name="BackgroundRect" type="TextureRect" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_nau4t")
+
+[node name="StartButton" type="TextureButton" parent="BackgroundRect"]
+layout_mode = 0
+offset_left = 574.0
+offset_top = 60.0
+offset_right = 905.0
+offset_bottom = 205.0
+scale = Vector2(1.5, 1.5)
+texture_normal = ExtResource("2_h4v1s")
+texture_hover = ExtResource("3_tqjs2")
+texture_click_mask = ExtResource("4_s3ldw")
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_gbtnl")
+volume_db = -20.0
+autoplay = true
+
+[node name="ButtonTabMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("7_wej1d")
+
+[connection signal="pressed" from="BackgroundRect/StartButton" to="." method="StartButton_Pressed"]

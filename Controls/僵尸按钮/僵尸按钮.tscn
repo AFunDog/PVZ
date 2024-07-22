@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://3o4we2fpuxv2"]
+
+[ext_resource type="StyleBox" uid="uid://cw8bhffm5b73y" path="res://Controls/僵尸按钮/僵尸样式.tres" id="2_26wlm"]
+[ext_resource type="Script" path="res://Controls/僵尸按钮/僵尸按钮.cs" id="2_mupct"]
+
+[node name="僵尸按钮" type="Control"]
+custom_minimum_size = Vector2(128, 36)
+layout_mode = 3
+anchors_preset = 0
+mouse_default_cursor_shape = 2
+script = ExtResource("2_mupct")
+
+[node name="Container" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = ExtResource("2_26wlm")
+
+[node name="Content" type="Label" parent="Container"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.0666667, 0.709804, 0.0666667, 1)
+text = "按钮"
+horizontal_alignment = 1
+
+[connection signal="mouse_entered" from="Container" to="." method="OnMouseEntered"]
+[connection signal="mouse_exited" from="Container" to="." method="OnMouseExited"]

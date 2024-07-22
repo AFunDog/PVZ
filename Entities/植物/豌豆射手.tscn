@@ -1,0 +1,155 @@
+[gd_scene load_steps=38 format=3 uid="uid://mf8ssxxp0xy0"]
+
+[ext_resource type="Script" path="res://Entities/植物/豌豆射手.cs" id="1_soc21"]
+[ext_resource type="Texture2D" uid="uid://civpe2u3sky12" path="res://Assets/植物/豌豆射手/豌豆射手0000.png" id="1_w4tm1"]
+[ext_resource type="Texture2D" uid="uid://b1u5te7ias5m4" path="res://Assets/植物/豌豆射手/豌豆射手0001.png" id="2_ladbf"]
+[ext_resource type="Texture2D" uid="uid://rybcpwto31si" path="res://Assets/植物/豌豆射手/豌豆射手0002.png" id="3_ddst5"]
+[ext_resource type="Texture2D" uid="uid://d3e1pxx2hq3q0" path="res://Assets/植物/豌豆射手/豌豆射手0003.png" id="4_0s6kk"]
+[ext_resource type="Texture2D" uid="uid://drn84vn0qntg6" path="res://Assets/植物/豌豆射手/豌豆射手0004.png" id="5_lf2cf"]
+[ext_resource type="Texture2D" uid="uid://dhp2cmfnlqu0i" path="res://Assets/植物/豌豆射手/豌豆射手0005.png" id="6_ca31p"]
+[ext_resource type="Texture2D" uid="uid://cyc810bk4iefs" path="res://Assets/植物/豌豆射手/豌豆射手0006.png" id="7_y8who"]
+[ext_resource type="Texture2D" uid="uid://c4l7g262g47i7" path="res://Assets/植物/豌豆射手/豌豆射手0007.png" id="8_qaen2"]
+[ext_resource type="Texture2D" uid="uid://dwgakyxwd8ysh" path="res://Assets/植物/豌豆射手/豌豆射手0008.png" id="9_b7xpu"]
+[ext_resource type="Texture2D" uid="uid://bbmqhlkwu72fh" path="res://Assets/植物/豌豆射手/豌豆射手0009.png" id="10_3p5jv"]
+[ext_resource type="Texture2D" uid="uid://bkqcpw4gqpi3v" path="res://Assets/植物/豌豆射手/豌豆射手0010.png" id="11_1rt8i"]
+[ext_resource type="Texture2D" uid="uid://bsnopvaykb87b" path="res://Assets/植物/豌豆射手/豌豆射手0011.png" id="12_v774k"]
+[ext_resource type="Texture2D" uid="uid://bmuhruyy3vle7" path="res://Assets/植物/豌豆射手/豌豆射手0012.png" id="13_mnare"]
+[ext_resource type="Texture2D" uid="uid://dwa6d1pq5ugkc" path="res://Assets/植物/豌豆射手/豌豆射手0013.png" id="14_2727u"]
+[ext_resource type="Texture2D" uid="uid://bgj2lju6ttmh2" path="res://Assets/植物/豌豆射手/豌豆射手0014.png" id="15_4ed75"]
+[ext_resource type="Texture2D" uid="uid://osektfmhq05j" path="res://Assets/植物/豌豆射手/豌豆射手0015.png" id="16_5devr"]
+[ext_resource type="Texture2D" uid="uid://byg2vmk5jw1ck" path="res://Assets/植物/豌豆射手/豌豆射手0016.png" id="17_mjx7i"]
+[ext_resource type="Texture2D" uid="uid://jkhybn2tku5" path="res://Assets/植物/豌豆射手/豌豆射手0017.png" id="18_e6hi0"]
+[ext_resource type="Texture2D" uid="uid://dfkesyy6bqr35" path="res://Assets/植物/豌豆射手/豌豆射手0018.png" id="19_ejs6e"]
+[ext_resource type="Texture2D" uid="uid://cjwihejpm43bt" path="res://Assets/植物/豌豆射手/豌豆射手0019.png" id="20_jwv82"]
+[ext_resource type="Texture2D" uid="uid://d382usg0jehan" path="res://Assets/植物/豌豆射手/豌豆射手0020.png" id="21_gv8ua"]
+[ext_resource type="Texture2D" uid="uid://b0xxn8w8midn0" path="res://Assets/植物/豌豆射手/豌豆射手0021.png" id="22_jb70l"]
+[ext_resource type="Texture2D" uid="uid://c6ygrfyoa08bh" path="res://Assets/植物/豌豆射手/豌豆射手0022.png" id="23_nlmbx"]
+[ext_resource type="Texture2D" uid="uid://bksg8qbvvyvru" path="res://Assets/植物/豌豆射手/豌豆射手0023.png" id="24_bgqls"]
+[ext_resource type="Texture2D" uid="uid://cfndexhvr6a64" path="res://Assets/植物/豌豆射手/豌豆射手0024.png" id="25_ulh6g"]
+[ext_resource type="Texture2D" uid="uid://ch5j2noow1321" path="res://Assets/植物/豌豆射手/豌豆射手0025.png" id="26_l3cgj"]
+[ext_resource type="Texture2D" uid="uid://c0psdtbf8jfmd" path="res://Assets/植物/豌豆射手/豌豆射手0026.png" id="27_3hpjo"]
+[ext_resource type="Texture2D" uid="uid://hgwk65er5yye" path="res://Assets/植物/豌豆射手/豌豆射手0027.png" id="28_dimtk"]
+[ext_resource type="Texture2D" uid="uid://io4obfwd5orx" path="res://Assets/植物/豌豆射手/豌豆射手0028.png" id="29_hl262"]
+[ext_resource type="Texture2D" uid="uid://bjhhcdhw2ibcs" path="res://Assets/植物/豌豆射手/豌豆射手0029.png" id="30_s2rtu"]
+[ext_resource type="Texture2D" uid="uid://dr5qfdkqa4jvx" path="res://Assets/植物/豌豆射手/豌豆射手0030.png" id="31_6rlpg"]
+[ext_resource type="Texture2D" uid="uid://do2h0km5ci7eq" path="res://Assets/植物/豌豆射手/豌豆射手0031.png" id="32_q0n22"]
+[ext_resource type="Texture2D" uid="uid://b5i04vfkxwhwm" path="res://Assets/植物/豌豆射手/豌豆射手0032.png" id="33_8arst"]
+[ext_resource type="Texture2D" uid="uid://bxkd8kbatq68c" path="res://Assets/植物/豌豆射手/豌豆射手0033.png" id="34_b86hv"]
+[ext_resource type="Texture2D" uid="uid://cbhjlwh5g5ek5" path="res://Assets/植物/豌豆射手/豌豆射手0034.png" id="35_sojyv"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vg5y1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_w4tm1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ladbf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ddst5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_0s6kk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_lf2cf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_ca31p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_y8who")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qaen2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_b7xpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_3p5jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1rt8i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_v774k")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_mnare")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_2727u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_4ed75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_5devr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_mjx7i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_e6hi0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_ejs6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_jwv82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_gv8ua")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_jb70l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_nlmbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_bgqls")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ulh6g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_l3cgj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_3hpjo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dimtk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_hl262")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_s2rtu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6rlpg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_q0n22")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_8arst")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_b86hv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_sojyv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="豌豆射手" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_vg5y1")
+script = ExtResource("1_soc21")

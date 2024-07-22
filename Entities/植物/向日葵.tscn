@@ -1,0 +1,251 @@
+[gd_scene load_steps=62 format=3 uid="uid://d026cropn128p"]
+
+[ext_resource type="Texture2D" uid="uid://b55xowclh8xvw" path="res://Assets/植物/向日葵/向日葵0000.png" id="1_aq27v"]
+[ext_resource type="Texture2D" uid="uid://c3cpd7jlxcckq" path="res://Assets/植物/向日葵/向日葵0001.png" id="2_bmqo4"]
+[ext_resource type="Texture2D" uid="uid://dhhte8o2y3bv1" path="res://Assets/植物/向日葵/向日葵0002.png" id="3_fbvje"]
+[ext_resource type="Texture2D" uid="uid://h4sjye7l8wk2" path="res://Assets/植物/向日葵/向日葵0003.png" id="4_pdn52"]
+[ext_resource type="Texture2D" uid="uid://bscns1m1fbrb" path="res://Assets/植物/向日葵/向日葵0004.png" id="5_msbdk"]
+[ext_resource type="Texture2D" uid="uid://byt5q110dojwr" path="res://Assets/植物/向日葵/向日葵0005.png" id="6_myij7"]
+[ext_resource type="Texture2D" uid="uid://ctjj8qmbyep73" path="res://Assets/植物/向日葵/向日葵0006.png" id="7_hfdhr"]
+[ext_resource type="Texture2D" uid="uid://dpp4yciorm1ka" path="res://Assets/植物/向日葵/向日葵0007.png" id="8_kxsej"]
+[ext_resource type="Texture2D" uid="uid://dkjmjjsn4r16x" path="res://Assets/植物/向日葵/向日葵0008.png" id="9_7j2it"]
+[ext_resource type="Texture2D" uid="uid://c446jrd04h0kl" path="res://Assets/植物/向日葵/向日葵0009.png" id="10_05oy6"]
+[ext_resource type="Texture2D" uid="uid://d04l2b1t4288k" path="res://Assets/植物/向日葵/向日葵0010.png" id="11_i0uoe"]
+[ext_resource type="Texture2D" uid="uid://bdefyo3t6v43p" path="res://Assets/植物/向日葵/向日葵0011.png" id="12_ew4gw"]
+[ext_resource type="Texture2D" uid="uid://cvw5xk3mt3kl8" path="res://Assets/植物/向日葵/向日葵0012.png" id="13_ick45"]
+[ext_resource type="Texture2D" uid="uid://df1627p2bst2c" path="res://Assets/植物/向日葵/向日葵0013.png" id="14_cot06"]
+[ext_resource type="Texture2D" uid="uid://djyw0rd3a0k33" path="res://Assets/植物/向日葵/向日葵0014.png" id="15_fffki"]
+[ext_resource type="Texture2D" uid="uid://bftxesfrty7a4" path="res://Assets/植物/向日葵/向日葵0015.png" id="16_xb3wi"]
+[ext_resource type="Texture2D" uid="uid://xdmmqkw45r7a" path="res://Assets/植物/向日葵/向日葵0016.png" id="17_4rfnj"]
+[ext_resource type="Texture2D" uid="uid://djnymsqjabo38" path="res://Assets/植物/向日葵/向日葵0017.png" id="18_oo3bg"]
+[ext_resource type="Texture2D" uid="uid://bq5k0laesdki8" path="res://Assets/植物/向日葵/向日葵0018.png" id="19_gmghj"]
+[ext_resource type="Texture2D" uid="uid://cf6y41nyd2u7j" path="res://Assets/植物/向日葵/向日葵0019.png" id="20_gcwlx"]
+[ext_resource type="Texture2D" uid="uid://bt3wgikid8eyj" path="res://Assets/植物/向日葵/向日葵0020.png" id="21_jbyw6"]
+[ext_resource type="Texture2D" uid="uid://bkgwf365dhvmx" path="res://Assets/植物/向日葵/向日葵0021.png" id="22_5xbt6"]
+[ext_resource type="Texture2D" uid="uid://c36o8vnrr5jb5" path="res://Assets/植物/向日葵/向日葵0022.png" id="23_c5i7x"]
+[ext_resource type="Texture2D" uid="uid://c6bti3pg4pfwy" path="res://Assets/植物/向日葵/向日葵0023.png" id="24_o74cl"]
+[ext_resource type="Texture2D" uid="uid://bpkce8xv2mkr0" path="res://Assets/植物/向日葵/向日葵0024.png" id="25_mrub4"]
+[ext_resource type="Texture2D" uid="uid://0c2jranaahad" path="res://Assets/植物/向日葵/向日葵0025.png" id="26_gucpn"]
+[ext_resource type="Texture2D" uid="uid://bf7arsoldlufn" path="res://Assets/植物/向日葵/向日葵0026.png" id="27_l2iog"]
+[ext_resource type="Texture2D" uid="uid://175dpcyhk4ik" path="res://Assets/植物/向日葵/向日葵0027.png" id="28_hl6t3"]
+[ext_resource type="Texture2D" uid="uid://beearqo0b47jy" path="res://Assets/植物/向日葵/向日葵0028.png" id="29_ppk63"]
+[ext_resource type="Texture2D" uid="uid://d2q5nu5obavvp" path="res://Assets/植物/向日葵/向日葵0029.png" id="30_ty68o"]
+[ext_resource type="Texture2D" uid="uid://dmypijynga45p" path="res://Assets/植物/向日葵/向日葵0030.png" id="31_sq1sc"]
+[ext_resource type="Texture2D" uid="uid://cm2jeuc4niqhx" path="res://Assets/植物/向日葵/向日葵0031.png" id="32_u8k5n"]
+[ext_resource type="Texture2D" uid="uid://dt51d70cy4pu1" path="res://Assets/植物/向日葵/向日葵0032.png" id="33_jn8qb"]
+[ext_resource type="Texture2D" uid="uid://cfe02a5r4njo5" path="res://Assets/植物/向日葵/向日葵0033.png" id="34_4igd8"]
+[ext_resource type="Texture2D" uid="uid://cdff6rlbrdphe" path="res://Assets/植物/向日葵/向日葵0034.png" id="35_6vfee"]
+[ext_resource type="Texture2D" uid="uid://b3g0bd6isb7of" path="res://Assets/植物/向日葵/向日葵0035.png" id="36_x8w55"]
+[ext_resource type="Texture2D" uid="uid://dawiu2m5f28t3" path="res://Assets/植物/向日葵/向日葵0036.png" id="37_k6olw"]
+[ext_resource type="Texture2D" uid="uid://bsk3bll5rjdyp" path="res://Assets/植物/向日葵/向日葵0037.png" id="38_xkw7b"]
+[ext_resource type="Texture2D" uid="uid://bv5vgw8p4a88c" path="res://Assets/植物/向日葵/向日葵0038.png" id="39_4dn0m"]
+[ext_resource type="Texture2D" uid="uid://1yufvxogjaet" path="res://Assets/植物/向日葵/向日葵0039.png" id="40_1el6a"]
+[ext_resource type="Texture2D" uid="uid://e0ampbf60njv" path="res://Assets/植物/向日葵/向日葵0040.png" id="41_65a8e"]
+[ext_resource type="Texture2D" uid="uid://cbm8sugj812aq" path="res://Assets/植物/向日葵/向日葵0041.png" id="42_xs6yk"]
+[ext_resource type="Texture2D" uid="uid://dhqlpfy2sqtv7" path="res://Assets/植物/向日葵/向日葵0042.png" id="43_yoqyl"]
+[ext_resource type="Texture2D" uid="uid://d3g7h478ajigj" path="res://Assets/植物/向日葵/向日葵0043.png" id="44_5rrmc"]
+[ext_resource type="Texture2D" uid="uid://t32lj5ow3ug3" path="res://Assets/植物/向日葵/向日葵0044.png" id="45_gyc0h"]
+[ext_resource type="Texture2D" uid="uid://d1jmifumrxu7b" path="res://Assets/植物/向日葵/向日葵0045.png" id="46_11fpx"]
+[ext_resource type="Texture2D" uid="uid://c5f7gokaa0crn" path="res://Assets/植物/向日葵/向日葵0046.png" id="47_juqx2"]
+[ext_resource type="Texture2D" uid="uid://car2n1jc072t3" path="res://Assets/植物/向日葵/向日葵0047.png" id="48_rhj6b"]
+[ext_resource type="Texture2D" uid="uid://da0hgkd8dmjoh" path="res://Assets/植物/向日葵/向日葵0048.png" id="49_fovll"]
+[ext_resource type="Texture2D" uid="uid://d1liksbpe7v8k" path="res://Assets/植物/向日葵/向日葵0049.png" id="50_36lcy"]
+[ext_resource type="Texture2D" uid="uid://bnrlyqu73obcw" path="res://Assets/植物/向日葵/向日葵0050.png" id="51_mylkr"]
+[ext_resource type="Texture2D" uid="uid://dof8v3yp0pp7o" path="res://Assets/植物/向日葵/向日葵0051.png" id="52_460tq"]
+[ext_resource type="Texture2D" uid="uid://brfk4cnwqhpsr" path="res://Assets/植物/向日葵/向日葵0052.png" id="53_h0een"]
+[ext_resource type="Texture2D" uid="uid://gmxnjj514bav" path="res://Assets/植物/向日葵/向日葵0053.png" id="54_p8vch"]
+[ext_resource type="Texture2D" uid="uid://qukmsdsf6j1g" path="res://Assets/植物/向日葵/向日葵0054.png" id="55_anbyh"]
+[ext_resource type="Texture2D" uid="uid://cp4r5bv6kdjct" path="res://Assets/植物/向日葵/向日葵0055.png" id="56_yv57s"]
+[ext_resource type="Texture2D" uid="uid://5liippjf1l1c" path="res://Assets/植物/向日葵/向日葵0056.png" id="57_jkxnu"]
+[ext_resource type="Texture2D" uid="uid://4poj8wg07fa7" path="res://Assets/植物/向日葵/向日葵0057.png" id="58_0nvp5"]
+[ext_resource type="Texture2D" uid="uid://bnuwjjgbgyhii" path="res://Assets/植物/向日葵/向日葵0058.png" id="59_e2rsb"]
+[ext_resource type="Script" path="res://Entities/植物/向日葵.cs" id="60_gpa3e"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_qsiry"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_aq27v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_bmqo4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_fbvje")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_pdn52")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_msbdk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_myij7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_hfdhr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_kxsej")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_7j2it")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_05oy6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_i0uoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_ew4gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ick45")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_cot06")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_fffki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_xb3wi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_4rfnj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_oo3bg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_gmghj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_gcwlx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_jbyw6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_5xbt6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_c5i7x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_o74cl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_mrub4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_gucpn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_l2iog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_hl6t3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_ppk63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_ty68o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_sq1sc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_u8k5n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_jn8qb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_4igd8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_6vfee")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_x8w55")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_k6olw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_xkw7b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_4dn0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_1el6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_65a8e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_xs6yk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_yoqyl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_5rrmc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_gyc0h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_11fpx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_juqx2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_rhj6b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_fovll")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_36lcy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_mylkr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_460tq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_h0een")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_p8vch")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_anbyh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_yv57s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_jkxnu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_0nvp5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_e2rsb")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[node name="向日葵" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_qsiry")
+script = ExtResource("60_gpa3e")

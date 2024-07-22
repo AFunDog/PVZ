@@ -1,0 +1,62 @@
+[gd_scene load_steps=3 format=3 uid="uid://b12hcbu5rn31v"]
+
+[ext_resource type="Script" path="res://Controls/卡牌栏/卡牌栏.cs" id="1_r2cu2"]
+[ext_resource type="PackedScene" uid="uid://ds5uoebuc62gv" path="res://Controls/卡牌空位/卡牌空位.tscn" id="2_qmih6"]
+
+[node name="卡牌栏" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_r2cu2")
+
+[node name="TopCardBackground" type="HBoxContainer" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+offset_right = 750.0
+offset_bottom = 68.0
+theme_override_constants/separation = 6
+
+[node name="卡牌空位1" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位2" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位3" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位4" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位5" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位6" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位7" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位8" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位9" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位10" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位11" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位12" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位13" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2
+
+[node name="卡牌空位14" parent="TopCardBackground" instance=ExtResource("2_qmih6")]
+layout_mode = 2

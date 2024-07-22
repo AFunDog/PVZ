@@ -1,0 +1,10 @@
+[gd_resource type="StyleBoxTexture" load_steps=2 format=3 uid="uid://dx8abtx17iw33"]
+
+[ext_resource type="Texture2D" uid="uid://bwhuu6jny6gv3" path="res://Assets/组件/按钮_工具_高亮.png" id="1_xhtfn"]
+
+[resource]
+texture = ExtResource("1_xhtfn")
+texture_margin_left = 14.0
+texture_margin_top = 10.0
+texture_margin_right = 14.0
+texture_margin_bottom = 10.0
