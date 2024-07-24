@@ -1,0 +1,430 @@
+[gd_resource type="SpriteFrames" load_steps=106 format=3 uid="uid://dtb64ewdjw07x"]
+
+[ext_resource type="Texture2D" uid="uid://xov2t83xbtpt" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0000.png" id="1_2qapb"]
+[ext_resource type="Texture2D" uid="uid://c215ghxwctpxw" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0001.png" id="2_ecr33"]
+[ext_resource type="Texture2D" uid="uid://cfkddolbw1d6e" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0002.png" id="3_ls5x6"]
+[ext_resource type="Texture2D" uid="uid://bxnuw2urkgr6h" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0003.png" id="4_522xy"]
+[ext_resource type="Texture2D" uid="uid://joe12fjdejbu" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0004.png" id="5_h6fdd"]
+[ext_resource type="Texture2D" uid="uid://c88w8g7i65c1u" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0005.png" id="6_abfyc"]
+[ext_resource type="Texture2D" uid="uid://bs151rilj5trb" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0006.png" id="7_k7m0l"]
+[ext_resource type="Texture2D" uid="uid://6vwv4uyoafqc" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0007.png" id="8_tfhxx"]
+[ext_resource type="Texture2D" uid="uid://cew3xrsvarqg" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0008.png" id="9_cigm0"]
+[ext_resource type="Texture2D" uid="uid://dsr83i1rngexr" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0009.png" id="10_7wy6t"]
+[ext_resource type="Texture2D" uid="uid://s2q7kj15wxsy" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0010.png" id="11_r71v7"]
+[ext_resource type="Texture2D" uid="uid://b7a7ir0wls0lo" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0011.png" id="12_nuxgp"]
+[ext_resource type="Texture2D" uid="uid://dd255hohur2kl" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0012.png" id="13_ly01p"]
+[ext_resource type="Texture2D" uid="uid://bvaebcyupo330" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0013.png" id="14_b6qix"]
+[ext_resource type="Texture2D" uid="uid://chla46doprwwj" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0014.png" id="15_undwu"]
+[ext_resource type="Texture2D" uid="uid://dkxemhx5lanlr" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0015.png" id="16_0aawp"]
+[ext_resource type="Texture2D" uid="uid://xu873qgdo7rp" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0016.png" id="17_vjyr7"]
+[ext_resource type="Texture2D" uid="uid://b65s2hqluuobj" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0017.png" id="18_b876s"]
+[ext_resource type="Texture2D" uid="uid://c64dxo0aamh2p" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0018.png" id="19_81suq"]
+[ext_resource type="Texture2D" uid="uid://0vrkbrin2css" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0019.png" id="20_rqljx"]
+[ext_resource type="Texture2D" uid="uid://dsl6gjie0nlc3" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0020.png" id="21_vrkv7"]
+[ext_resource type="Texture2D" uid="uid://cfq0riaq8xuml" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0021.png" id="22_6wwcd"]
+[ext_resource type="Texture2D" uid="uid://drjnl00xqp3wq" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0022.png" id="23_ebh6a"]
+[ext_resource type="Texture2D" uid="uid://claarq404dlvj" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0023.png" id="24_ka53u"]
+[ext_resource type="Texture2D" uid="uid://craf42fabvcu3" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0024.png" id="25_e5ves"]
+[ext_resource type="Texture2D" uid="uid://ce0dccheiu5ea" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0025.png" id="26_t2eo7"]
+[ext_resource type="Texture2D" uid="uid://ctx7t3xsqaw1h" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0026.png" id="27_geft3"]
+[ext_resource type="Texture2D" uid="uid://8foci5vxpyj7" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0027.png" id="28_w6dft"]
+[ext_resource type="Texture2D" uid="uid://b4a7l60rqur8l" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0028.png" id="29_t4j2q"]
+[ext_resource type="Texture2D" uid="uid://bbgguctpvudit" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0029.png" id="30_fojmb"]
+[ext_resource type="Texture2D" uid="uid://b83sw3ks14dj0" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0030.png" id="31_qyxcw"]
+[ext_resource type="Texture2D" uid="uid://bgashb2kdlxdi" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0031.png" id="32_frh6j"]
+[ext_resource type="Texture2D" uid="uid://dihdgufqyncqt" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0032.png" id="33_h60ry"]
+[ext_resource type="Texture2D" uid="uid://rmdsgxaq507y" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0033.png" id="34_6jtjf"]
+[ext_resource type="Texture2D" uid="uid://b1ygktgpwq11i" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0034.png" id="35_8mhpk"]
+[ext_resource type="Texture2D" uid="uid://b1sos1g0bf1um" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0035.png" id="36_dtuwe"]
+[ext_resource type="Texture2D" uid="uid://d12uasn37gikt" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0036.png" id="37_gwbql"]
+[ext_resource type="Texture2D" uid="uid://ne5618m02p4i" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0037.png" id="38_i5mmi"]
+[ext_resource type="Texture2D" uid="uid://cniok1f4r4rmk" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0038.png" id="39_ja66a"]
+[ext_resource type="Texture2D" uid="uid://dvoj7bakhadtx" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0039.png" id="40_jsfy1"]
+[ext_resource type="Texture2D" uid="uid://vwgpi63q7r25" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0040.png" id="41_ke26q"]
+[ext_resource type="Texture2D" uid="uid://bup5w6pps7kxa" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0041.png" id="42_jx4nv"]
+[ext_resource type="Texture2D" uid="uid://bjh50vtybcldt" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0042.png" id="43_vv1fk"]
+[ext_resource type="Texture2D" uid="uid://vdkh7gyxb8kp" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0043.png" id="44_81uqk"]
+[ext_resource type="Texture2D" uid="uid://dj50a7lu0cdko" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0044.png" id="45_61key"]
+[ext_resource type="Texture2D" uid="uid://ne5rh1mpjo6e" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0045.png" id="46_cm2bw"]
+[ext_resource type="Texture2D" uid="uid://b4aq6cpys5233" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0046.png" id="47_lche8"]
+[ext_resource type="Texture2D" uid="uid://mxsyek2vam27" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0047.png" id="48_hy5pg"]
+[ext_resource type="Texture2D" uid="uid://bbv3bp6elkwrm" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0048.png" id="49_srpd2"]
+[ext_resource type="Texture2D" uid="uid://cdn3be4cm21f2" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0049.png" id="50_v1o2h"]
+[ext_resource type="Texture2D" uid="uid://62l3d4ttdd3e" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0050.png" id="51_e250v"]
+[ext_resource type="Texture2D" uid="uid://e8n46pw31la2" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0051.png" id="52_srhtx"]
+[ext_resource type="Texture2D" uid="uid://5k1cwdpl18it" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0052.png" id="53_v1wmg"]
+[ext_resource type="Texture2D" uid="uid://dj1u8ht8hm6oa" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0053.png" id="54_m5joh"]
+[ext_resource type="Texture2D" uid="uid://daleta2h47o7f" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0054.png" id="55_ni86u"]
+[ext_resource type="Texture2D" uid="uid://wbiuyxbmnqg1" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0055.png" id="56_bl7fu"]
+[ext_resource type="Texture2D" uid="uid://bgxwomfuaoje6" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0056.png" id="57_6v38y"]
+[ext_resource type="Texture2D" uid="uid://61xhy6mi63mr" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0057.png" id="58_vevvv"]
+[ext_resource type="Texture2D" uid="uid://dwkjhf5k4fb5d" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0058.png" id="59_huyjn"]
+[ext_resource type="Texture2D" uid="uid://b1ibvfl10um3w" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0059.png" id="60_p6h6e"]
+[ext_resource type="Texture2D" uid="uid://c3lm47fn5egki" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0060.png" id="61_ht2t5"]
+[ext_resource type="Texture2D" uid="uid://bslfqvpf31u16" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0061.png" id="62_4nxut"]
+[ext_resource type="Texture2D" uid="uid://cih54d4nm2uoe" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0062.png" id="63_b1lqs"]
+[ext_resource type="Texture2D" uid="uid://do45emfkj4bsf" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0063.png" id="64_kfqgq"]
+[ext_resource type="Texture2D" uid="uid://qxtgfryona7p" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0064.png" id="65_yye05"]
+[ext_resource type="Texture2D" uid="uid://q6xrdqup681" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0065.png" id="66_dp4yb"]
+[ext_resource type="Texture2D" uid="uid://b70ku1stah3q4" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0066.png" id="67_70whc"]
+[ext_resource type="Texture2D" uid="uid://ufes23k08n14" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0067.png" id="68_1lrv7"]
+[ext_resource type="Texture2D" uid="uid://dwi2hnag6vigq" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0068.png" id="69_5o2bw"]
+[ext_resource type="Texture2D" uid="uid://bvba2qu686mps" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0069.png" id="70_lgh8w"]
+[ext_resource type="Texture2D" uid="uid://ujsmaekthgjd" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0070.png" id="71_65354"]
+[ext_resource type="Texture2D" uid="uid://dhk76x4kxpkro" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0071.png" id="72_6j427"]
+[ext_resource type="Texture2D" uid="uid://dirj34wiwqxvs" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0072.png" id="73_i6h3c"]
+[ext_resource type="Texture2D" uid="uid://48k11ban6d3s" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0073.png" id="74_mg70u"]
+[ext_resource type="Texture2D" uid="uid://tp6j6x25wpl5" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0074.png" id="75_7pjh2"]
+[ext_resource type="Texture2D" uid="uid://yg2ai6jsouqj" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0075.png" id="76_dx4e2"]
+[ext_resource type="Texture2D" uid="uid://bsrgk2h3xr0c4" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0076.png" id="77_3x68s"]
+[ext_resource type="Texture2D" uid="uid://fxnkc4nwkaxc" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0077.png" id="78_o217r"]
+[ext_resource type="Texture2D" uid="uid://rdob6lj5t04p" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0078.png" id="79_f3yti"]
+[ext_resource type="Texture2D" uid="uid://56a1c3o8nr22" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0079.png" id="80_gd326"]
+[ext_resource type="Texture2D" uid="uid://kop5cv7xhknb" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0080.png" id="81_l543a"]
+[ext_resource type="Texture2D" uid="uid://b11kn538gk287" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0081.png" id="82_6iy70"]
+[ext_resource type="Texture2D" uid="uid://bkeblj6aa4ljl" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0082.png" id="83_0av1a"]
+[ext_resource type="Texture2D" uid="uid://cqh8sj6xjjins" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0083.png" id="84_4hwkb"]
+[ext_resource type="Texture2D" uid="uid://gcrgsvfmrcbq" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0084.png" id="85_febt3"]
+[ext_resource type="Texture2D" uid="uid://b3l85hfgc37wu" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0085.png" id="86_f32km"]
+[ext_resource type="Texture2D" uid="uid://dnoo6p03bihl7" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0086.png" id="87_aw1cy"]
+[ext_resource type="Texture2D" uid="uid://c872nu54mn8n8" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0087.png" id="88_e2sy1"]
+[ext_resource type="Texture2D" uid="uid://cvhdky8o53rai" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0088.png" id="89_05b2q"]
+[ext_resource type="Texture2D" uid="uid://xmo5q61pcj5j" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0089.png" id="90_d0i2w"]
+[ext_resource type="Texture2D" uid="uid://ddoc15g1qmylf" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0090.png" id="91_f47c6"]
+[ext_resource type="Texture2D" uid="uid://2h3tv15uylnx" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0091.png" id="92_svl8q"]
+[ext_resource type="Texture2D" uid="uid://cyn4hnmej5ilk" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0092.png" id="93_ob53q"]
+[ext_resource type="Texture2D" uid="uid://ceymcra4s1p1n" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0093.png" id="94_3slu5"]
+[ext_resource type="Texture2D" uid="uid://bmy8r6bjr6tqc" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0094.png" id="95_gs54j"]
+[ext_resource type="Texture2D" uid="uid://j2pc5jpo7ga6" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0095.png" id="96_315h3"]
+[ext_resource type="Texture2D" uid="uid://cfitisx6gleik" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0096.png" id="97_rfavq"]
+[ext_resource type="Texture2D" uid="uid://cnvina2jlofwh" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0097.png" id="98_wqhlr"]
+[ext_resource type="Texture2D" uid="uid://dyo7ujb0mwck0" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0098.png" id="99_ndbyr"]
+[ext_resource type="Texture2D" uid="uid://bnlp46piyf1a2" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0099.png" id="100_l6xdj"]
+[ext_resource type="Texture2D" uid="uid://ddb4bqegyvo5y" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0100.png" id="101_1e62e"]
+[ext_resource type="Texture2D" uid="uid://dwi32cqyskit0" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0101.png" id="102_f2d76"]
+[ext_resource type="Texture2D" uid="uid://cv3wqnitg67fh" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0102.png" id="103_fr2dy"]
+[ext_resource type="Texture2D" uid="uid://cpprc2kf33vki" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0103.png" id="104_no46w"]
+[ext_resource type="Texture2D" uid="uid://doh72d2ks4gc7" path="res://Assets/僵尸/普通僵尸/普通僵尸走路/普通僵尸走路0104.png" id="105_ta7fj"]
+
+[resource]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_2qapb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_ecr33")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_ls5x6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_522xy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_h6fdd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_abfyc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_k7m0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_tfhxx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_cigm0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_7wy6t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_r71v7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nuxgp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_ly01p")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_b6qix")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_undwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_0aawp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_vjyr7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_b876s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_81suq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_rqljx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_vrkv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_6wwcd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_ebh6a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_ka53u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_e5ves")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_t2eo7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_geft3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_w6dft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_t4j2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fojmb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_qyxcw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_frh6j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_h60ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_6jtjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_8mhpk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_dtuwe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_gwbql")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_i5mmi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ja66a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_jsfy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_ke26q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_jx4nv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_vv1fk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_81uqk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_61key")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_cm2bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_lche8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_hy5pg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_srpd2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_v1o2h")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_e250v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_srhtx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_v1wmg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_m5joh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ni86u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_bl7fu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_6v38y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_vevvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_huyjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_p6h6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_ht2t5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_4nxut")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_b1lqs")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_kfqgq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_yye05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_dp4yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_70whc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_1lrv7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_5o2bw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_lgh8w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_65354")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_6j427")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_i6h3c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_mg70u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_7pjh2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_dx4e2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_3x68s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_o217r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_f3yti")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_gd326")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_l543a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_6iy70")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_0av1a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_4hwkb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_febt3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_f32km")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_aw1cy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_e2sy1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_05b2q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_d0i2w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_f47c6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_svl8q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_ob53q")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_3slu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_gs54j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_315h3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_rfavq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_wqhlr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("99_ndbyr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_l6xdj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_1e62e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_f2d76")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_fr2dy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_no46w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_ta7fj")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 30.0
+}]

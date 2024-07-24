@@ -1,0 +1,9 @@
+[gd_resource type="ShaderMaterial" load_steps=2 format=3 uid="uid://dh3vxpv1rwffy"]
+
+[ext_resource type="Shader" path="res://Entities/僵尸/僵尸样式.gdshader" id="1_a3ao0"]
+
+[resource]
+resource_local_to_scene = true
+shader = ExtResource("1_a3ao0")
+shader_parameter/hit = false
+shader_parameter/frozen = false

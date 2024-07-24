@@ -1,16 +1,16 @@
-[gd_scene load_steps=3 format=3 uid="uid://b4ji5otttjis6"]
+[gd_scene load_steps=4 format=3 uid="uid://b4ji5otttjis6"]
 
 [ext_resource type="Texture2D" uid="uid://dqduejlwev5jt" path="res://Assets/子弹/豌豆子弹_正常.png" id="1_1ryyk"]
+[ext_resource type="Script" path="res://Entities/子弹/豌豆子弹.cs" id="1_7ggiy"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_uuqcs"]
 radius = 14.0
 
-[node name="豌豆子弹" type="Node2D"]
+[node name="豌豆子弹" type="Area2D"]
+script = ExtResource("1_7ggiy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("1_1ryyk")
 
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionPolygon2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]
 shape = SubResource("CircleShape2D_uuqcs")

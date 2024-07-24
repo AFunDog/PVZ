@@ -1,0 +1,186 @@
+[gd_scene load_steps=44 format=3 uid="uid://ct1tshke6wg6d"]
+
+[ext_resource type="Texture2D" uid="uid://uuan0fbgcryd" path="res://Assets/植物/寒冰射手/寒冰射手0000.png" id="1_ohg5w"]
+[ext_resource type="Texture2D" uid="uid://bxji8g6a01jir" path="res://Assets/植物/寒冰射手/寒冰射手0001.png" id="2_lat5s"]
+[ext_resource type="Texture2D" uid="uid://ryyn6cya3owh" path="res://Assets/植物/寒冰射手/寒冰射手0002.png" id="3_jxt2m"]
+[ext_resource type="Texture2D" uid="uid://c14owfd52fewc" path="res://Assets/植物/寒冰射手/寒冰射手0003.png" id="4_s7h21"]
+[ext_resource type="Texture2D" uid="uid://cp31xfjkpc5al" path="res://Assets/植物/寒冰射手/寒冰射手0004.png" id="5_gmei7"]
+[ext_resource type="Texture2D" uid="uid://dr4cgu3aek7ws" path="res://Assets/植物/寒冰射手/寒冰射手0005.png" id="6_uh88s"]
+[ext_resource type="Texture2D" uid="uid://5g1qmlr265pn" path="res://Assets/植物/寒冰射手/寒冰射手0006.png" id="7_i8htc"]
+[ext_resource type="Texture2D" uid="uid://clh6ggjje7tv8" path="res://Assets/植物/寒冰射手/寒冰射手0007.png" id="8_k8v12"]
+[ext_resource type="Texture2D" uid="uid://8wrgp4qn1r21" path="res://Assets/植物/寒冰射手/寒冰射手0008.png" id="9_n7ndl"]
+[ext_resource type="Texture2D" uid="uid://b26fao3vxdog" path="res://Assets/植物/寒冰射手/寒冰射手0009.png" id="10_0du1x"]
+[ext_resource type="Texture2D" uid="uid://drroffyr8im68" path="res://Assets/植物/寒冰射手/寒冰射手0010.png" id="11_jjpxf"]
+[ext_resource type="Texture2D" uid="uid://c6672ubavkt0j" path="res://Assets/植物/寒冰射手/寒冰射手0011.png" id="12_hxfdv"]
+[ext_resource type="Texture2D" uid="uid://dubyoko51g35x" path="res://Assets/植物/寒冰射手/寒冰射手0012.png" id="13_bjsed"]
+[ext_resource type="Texture2D" uid="uid://q2ei538sn27i" path="res://Assets/植物/寒冰射手/寒冰射手0013.png" id="14_o32f1"]
+[ext_resource type="Texture2D" uid="uid://ctnxthv7ie778" path="res://Assets/植物/寒冰射手/寒冰射手0014.png" id="15_hyti5"]
+[ext_resource type="Texture2D" uid="uid://b4bijxc143vji" path="res://Assets/植物/寒冰射手/寒冰射手0015.png" id="16_1gvam"]
+[ext_resource type="Texture2D" uid="uid://cq2wjpj2gj47p" path="res://Assets/植物/寒冰射手/寒冰射手0016.png" id="17_0b2aj"]
+[ext_resource type="Texture2D" uid="uid://c0h2arlilfbpa" path="res://Assets/植物/寒冰射手/寒冰射手0017.png" id="18_flfj1"]
+[ext_resource type="Texture2D" uid="uid://b33tlmt3pd4ea" path="res://Assets/植物/寒冰射手/寒冰射手0018.png" id="19_k3782"]
+[ext_resource type="Texture2D" uid="uid://do8aqwjem35p5" path="res://Assets/植物/寒冰射手/寒冰射手0019.png" id="20_mgvnc"]
+[ext_resource type="Texture2D" uid="uid://4xsq7f7h8rbv" path="res://Assets/植物/寒冰射手/寒冰射手0020.png" id="21_55u5g"]
+[ext_resource type="Texture2D" uid="uid://dn58ijijd7j7s" path="res://Assets/植物/寒冰射手/寒冰射手0021.png" id="22_n2rba"]
+[ext_resource type="Texture2D" uid="uid://cd47vwra7f86m" path="res://Assets/植物/寒冰射手/寒冰射手0022.png" id="23_op4uv"]
+[ext_resource type="Texture2D" uid="uid://cfeh55dfqig3f" path="res://Assets/植物/寒冰射手/寒冰射手0023.png" id="24_msci1"]
+[ext_resource type="Texture2D" uid="uid://bot3yrhh1jsxv" path="res://Assets/植物/寒冰射手/寒冰射手0024.png" id="25_x5j1l"]
+[ext_resource type="Texture2D" uid="uid://bfgrwlvr8tolp" path="res://Assets/植物/寒冰射手/寒冰射手0025.png" id="26_6qchq"]
+[ext_resource type="Texture2D" uid="uid://b8u0du2p7el6w" path="res://Assets/植物/寒冰射手/寒冰射手0026.png" id="27_s5hpa"]
+[ext_resource type="Texture2D" uid="uid://dtdwy1kyeexjh" path="res://Assets/植物/寒冰射手/寒冰射手0027.png" id="28_vdc1n"]
+[ext_resource type="Texture2D" uid="uid://dokmyk7qeh1wn" path="res://Assets/植物/寒冰射手/寒冰射手0028.png" id="29_0pcmt"]
+[ext_resource type="Texture2D" uid="uid://bu7qlvnvjx1ff" path="res://Assets/植物/寒冰射手/寒冰射手0029.png" id="30_mwe28"]
+[ext_resource type="Texture2D" uid="uid://cjmxvqdacya56" path="res://Assets/植物/寒冰射手/寒冰射手0030.png" id="31_2ua4l"]
+[ext_resource type="Texture2D" uid="uid://dfvrv71gxg230" path="res://Assets/植物/寒冰射手/寒冰射手0031.png" id="32_rfww5"]
+[ext_resource type="Texture2D" uid="uid://c61q20g3lux4r" path="res://Assets/植物/寒冰射手/寒冰射手0032.png" id="33_ymoi5"]
+[ext_resource type="Texture2D" uid="uid://drojrkyyqqs4x" path="res://Assets/植物/寒冰射手/寒冰射手0033.png" id="34_rocu4"]
+[ext_resource type="Texture2D" uid="uid://dfyohwc5y3r7d" path="res://Assets/植物/寒冰射手/寒冰射手0034.png" id="35_43uy8"]
+[ext_resource type="Texture2D" uid="uid://cqu7b8w23aqya" path="res://Assets/植物/寒冰射手/寒冰射手0035.png" id="36_lhfv5"]
+[ext_resource type="Texture2D" uid="uid://1qj1m6i6exq8" path="res://Assets/植物/寒冰射手/寒冰射手0036.png" id="37_gqlrt"]
+[ext_resource type="Texture2D" uid="uid://bfu4qff3dctf4" path="res://Assets/植物/寒冰射手/寒冰射手0037.png" id="38_iuchb"]
+[ext_resource type="Texture2D" uid="uid://b5gfamv055ia4" path="res://Assets/植物/寒冰射手/寒冰射手0038.png" id="39_ewtet"]
+[ext_resource type="Texture2D" uid="uid://b3ct5rc5pboyc" path="res://Assets/植物/寒冰射手/寒冰射手0039.png" id="40_hmu2i"]
+[ext_resource type="Texture2D" uid="uid://qdhxadspdhyt" path="res://Assets/植物/寒冰射手/寒冰射手0040.png" id="41_5qp6f"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_tdull"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_ohg5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_lat5s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_jxt2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_s7h21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gmei7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_uh88s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_i8htc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_k8v12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_n7ndl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_0du1x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_jjpxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_hxfdv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_bjsed")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_o32f1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hyti5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_1gvam")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_0b2aj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_flfj1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_k3782")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_mgvnc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_55u5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_n2rba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_op4uv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_msci1")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_x5j1l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_6qchq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_s5hpa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_vdc1n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_0pcmt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_mwe28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_2ua4l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_rfww5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_ymoi5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_rocu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_43uy8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_lhfv5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_gqlrt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_iuchb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_ewtet")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_hmu2i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_5qp6f")
+}],
+"loop": true,
+"name": &"default",
+"speed": 30.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8jlwm"]
+size = Vector2(66, 55)
+
+[node name="寒冰射手" type="AnimatedSprite2D"]
+sprite_frames = SubResource("SpriteFrames_tdull")
+
+[node name="Area2D" type="Area2D" parent="."]
+unique_name_in_owner = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_8jlwm")

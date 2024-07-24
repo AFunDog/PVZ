@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Diagnostics.CodeAnalysis;
 using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
@@ -19,11 +20,15 @@ public partial class GameScene : Control
     private Container? _choseCardBackground;
     private Control? _cardContainer;
     private Control? _plantCardRect;
+    private TextureButton? _shovelBox;
 
     private Timer? _sunShinetimer;
+    private Timer? _zombieTimer;
 
     private readonly GameMap _gameMap = new();
     private int _sunShine = 100;
+
+    public bool IsGameStart { get; private set; }
 
     public int SunShine
     {
@@ -58,6 +63,10 @@ public partial class GameScene : Control
         _sunShinetimer.Timeout += GenerateSunShine;
         CallDeferred(MethodName.AddChild, _sunShinetimer);
 
+        _zombieTimer = new Timer();
+        _zombieTimer.Timeout += GenerateZombie;
+        CallDeferred(MethodName.AddChild, _zombieTimer);
+
         _backgroundRect = GetNode<TextureRect>("%BackgroundRect");
         _backgroundRect.Texture = GD.Load<Texture2D>(AssetLibrary.场景.白天);
 
@@ -77,6 +86,9 @@ public partial class GameScene : Control
 
         _cardContainer = GetNode<Control>("%CardContainer");
         _plantCardRect = GetNode<Control>("%PlantCardRect");
+
+        _shovelBox = GetNode<TextureButton>("%ShovelBox");
+
         SetCardData();
         Ready += ToChoseCardState;
     }
@@ -221,6 +233,7 @@ public partial class GameScene : Control
             || _topRectContainer is null
             || _gameCamera is null
             || _sunShinetimer is null
+            || _zombieTimer is null
         )
             return;
 
@@ -265,7 +278,9 @@ public partial class GameScene : Control
             _cardToolbar.CardClick += CardToolBarCardClicked_OnGameStart;
             _cardToolbar.StartGame();
             _sunShinetimer.Start(10);
+            _zombieTimer.Start(20);
         };
+        IsGameStart = true;
     }
 
     private void GenerateSunShine()
@@ -276,6 +291,17 @@ public partial class GameScene : Control
         sun.Position = new Vector2(pos, -16);
         sun.TargetY = targetY;
         CallDeferred(Control.MethodName.AddChild, sun);
+    }
+
+    private void GenerateZombie()
+    {
+        using PackedScene zombieScene = GD.Load<PackedScene>("res://Entities/僵尸/僵尸.tscn");
+        Span<int> collect = [110, 220, 330, 440, 550];
+        var posY = Random.Shared.GetItems<int>(collect, 1)[0];
+        var zombie = zombieScene.Instantiate<Node2D>();
+        zombie.Position = new Vector2(1280, posY);
+        CallDeferred(MethodName.AddChild, zombie);
+        _zombieTimer!.WaitTime = Math.Max(10, _zombieTimer.WaitTime * 0.9);
     }
 
     public void OnSunShineClick(阳光 sun)
@@ -378,5 +404,23 @@ public partial class GameScene : Control
     private void OnStartGameButtonClicked()
     {
         ToStartGameState();
+    }
+
+    private void OnShovelBoxClicked(bool toggled)
+    {
+        if (!IsGameStart)
+            return;
+
+        if (toggled)
+        {
+            _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/无铲子盒.png");
+            var image = GD.Load<Texture2D>("res://Assets/组件/铲子.png");
+            Input.SetCustomMouseCursor(image, hotspot: image.GetSize() / 2);
+        }
+        else
+        {
+            _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/铲子盒.png");
+            Input.SetCustomMouseCursor(null);
+        }
     }
 }

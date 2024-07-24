@@ -52,6 +52,11 @@ namespace 植物大战僵尸.Structs
             return RemovePlantResult.Success;
         }
 
+        public void AddZombie(IZombie zombie)
+        {
+            Zombies.Add(zombie);
+        }
+
         private void OnPlantDied(IEntity entity)
         {
             var plant = (IPlant)entity!;

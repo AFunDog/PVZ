@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://mf8ssxxp0xy0"]
+[gd_scene load_steps=39 format=3 uid="uid://mf8ssxxp0xy0"]
 
 [ext_resource type="Script" path="res://Entities/植物/豌豆射手.cs" id="1_soc21"]
 [ext_resource type="Texture2D" uid="uid://civpe2u3sky12" path="res://Assets/植物/豌豆射手/豌豆射手0000.png" id="1_w4tm1"]
@@ -150,6 +150,14 @@ animations = [{
 "speed": 30.0
 }]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_43rm2"]
+size = Vector2(66, 55)
+
 [node name="豌豆射手" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_vg5y1")
 script = ExtResource("1_soc21")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_43rm2")

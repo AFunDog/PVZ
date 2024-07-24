@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs8hhhw2fk0k1"]
+
+[ext_resource type="Material" uid="uid://dh3vxpv1rwffy" path="res://Entities/僵尸/僵尸样式.tres" id="1_01bjn"]
+[ext_resource type="Script" path="res://Entities/僵尸/僵尸.cs" id="1_erb1i"]
+[ext_resource type="SpriteFrames" uid="uid://dtb64ewdjw07x" path="res://Entities/僵尸/普通僵尸.tres" id="3_5b8xc"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hxj8t"]
+size = Vector2(52, 89)
+
+[node name="僵尸" type="Area2D"]
+script = ExtResource("1_erb1i")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+material = ExtResource("1_01bjn")
+sprite_frames = ExtResource("3_5b8xc")
+animation = &"walk"
+autoplay = "walk"
+offset = Vector2(-20, 0)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
+position = Vector2(0, 11)
+shape = SubResource("RectangleShape2D_hxj8t")
+
+[connection signal="area_entered" from="." to="." method="OnAreaEntered"]

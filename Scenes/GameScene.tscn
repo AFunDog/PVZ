@@ -104,12 +104,15 @@ offset_bottom = 78.0
 grow_horizontal = 1
 grow_vertical = 1
 
-[node name="ShovelBox" type="TextureRect" parent="TopRectContainer"]
+[node name="ShovelBox" type="TextureButton" parent="TopRectContainer"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(88, 70)
 layout_mode = 2
-texture = ExtResource("4_jom51")
-expand_mode = 1
+toggle_mode = true
+action_mode = 0
+texture_normal = ExtResource("4_jom51")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="MainMenuButton" parent="TopRectContainer" instance=ExtResource("5_uhdi5")]
 layout_mode = 2
@@ -424,5 +427,6 @@ offset_right = 754.0
 offset_bottom = 546.0
 Content = "开始游戏"
 
+[connection signal="toggled" from="TopRectContainer/ShovelBox" to="." method="OnShovelBoxClicked"]
 [connection signal="Clicked" from="TopRectContainer/MainMenuButton" to="." method="MainMenuButtonClicked"]
 [connection signal="Clicked" from="ChoseCardRect/StartGameButton" to="." method="OnStartGameButtonClicked"]
