@@ -2,7 +2,7 @@ using System;
 using Godot;
 using 植物大战僵尸.Entities;
 
-public partial class 豌豆射手 : 植物
+public partial class 寒冰射手 : 植物
 {
     public override int MaxHealth { get; set; } = 300;
     protected override AnimatedSprite2D? Sprite2D => GetNode<AnimatedSprite2D>("%Sprite2D");
@@ -12,8 +12,6 @@ public partial class 豌豆射手 : 植物
         "res://Entities/子弹/豌豆子弹.tscn"
     );
 
-    // Called every frame. 'delta' is the elapsed time since the previous frame.
-
     protected override void OnPlantWork()
     {
         Shot();
@@ -22,6 +20,7 @@ public partial class 豌豆射手 : 植物
     private void Shot()
     {
         var bullet = _bulletScene.Instantiate<豌豆子弹>();
+        bullet.IsCold = true;
         var control = GetParent<Control>();
         if (control.Name != "GameMapContainer")
         {

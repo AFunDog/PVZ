@@ -25,6 +25,13 @@ namespace 植物大战僵尸.Helpers
                     100,
                     7.5,
                     new("豌豆射手", "res://Entities/植物/豌豆射手.tscn")
+                ),
+                new CardData(
+                    "寒冰射手",
+                    AssetLibrary.卡牌.寒冰射手,
+                    175,
+                    7.5,
+                    new("寒冰射手", "res://Entities/植物/寒冰射手.tscn")
                 )
             ];
     }

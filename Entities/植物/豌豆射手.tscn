@@ -37,7 +37,7 @@
 [ext_resource type="Texture2D" uid="uid://bxkd8kbatq68c" path="res://Assets/植物/豌豆射手/豌豆射手0033.png" id="34_b86hv"]
 [ext_resource type="Texture2D" uid="uid://cbhjlwh5g5ek5" path="res://Assets/植物/豌豆射手/豌豆射手0034.png" id="35_sojyv"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_vg5y1"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_dv7q3"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -153,11 +153,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_43rm2"]
 size = Vector2(66, 55)
 
-[node name="豌豆射手" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_vg5y1")
+[node name="豌豆射手" type="Area2D"]
 script = ExtResource("1_soc21")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_dv7q3")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_43rm2")

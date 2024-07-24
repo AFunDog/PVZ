@@ -25,11 +25,15 @@ namespace 植物大战僵尸.Structs
     {
         const int MapWidth = 9;
         const int MapHeight = 5;
-        public IPlant?[,] Map { get; } = new IPlant?[MapWidth, MapHeight];
+        public 植物?[,] Map { get; } = new 植物?[MapWidth, MapHeight];
 
-        public List<IZombie> Zombies { get; } = new();
+        //public double Progress { get; set; } = 100;
+        public List<IZombie> Zombies { get; } = [];
 
-        public PutPlantResult PutPlant(IPlant plant, int x, int y)
+        public event Action? GameLose;
+        public event Action? GameWin;
+
+        public PutPlantResult PutPlant(植物 plant, int x, int y)
         {
             if (x >= MapWidth || y >= MapHeight || x < 0 || y < 0)
                 return PutPlantResult.PosInvaid;
@@ -48,6 +52,8 @@ namespace 植物大战僵尸.Structs
                 return RemovePlantResult.PosInvaid;
             if (Map[x, y] is null)
                 return RemovePlantResult.NoPlant;
+
+            Map[x, y]!.QueueFree();
             Map[x, y] = null;
             return RemovePlantResult.Success;
         }
@@ -55,6 +61,13 @@ namespace 植物大战僵尸.Structs
         public void AddZombie(IZombie zombie)
         {
             Zombies.Add(zombie);
+            zombie.MoveToHome += OnZombieMoveToHome;
+        }
+
+        private void OnZombieMoveToHome(IZombie zombie)
+        {
+            GameLose?.Invoke();
+            GameLose = null;
         }
 
         private void OnPlantDied(IEntity entity)

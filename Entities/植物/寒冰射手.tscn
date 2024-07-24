@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=3 uid="uid://ct1tshke6wg6d"]
+[gd_scene load_steps=45 format=3 uid="uid://ct1tshke6wg6d"]
 
 [ext_resource type="Texture2D" uid="uid://uuan0fbgcryd" path="res://Assets/植物/寒冰射手/寒冰射手0000.png" id="1_ohg5w"]
 [ext_resource type="Texture2D" uid="uid://bxji8g6a01jir" path="res://Assets/植物/寒冰射手/寒冰射手0001.png" id="2_lat5s"]
@@ -41,8 +41,9 @@
 [ext_resource type="Texture2D" uid="uid://b5gfamv055ia4" path="res://Assets/植物/寒冰射手/寒冰射手0038.png" id="39_ewtet"]
 [ext_resource type="Texture2D" uid="uid://b3ct5rc5pboyc" path="res://Assets/植物/寒冰射手/寒冰射手0039.png" id="40_hmu2i"]
 [ext_resource type="Texture2D" uid="uid://qdhxadspdhyt" path="res://Assets/植物/寒冰射手/寒冰射手0040.png" id="41_5qp6f"]
+[ext_resource type="Script" path="res://Entities/植物/寒冰射手.cs" id="42_jq6lo"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_tdull"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_jnere"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -176,11 +177,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8jlwm"]
 size = Vector2(66, 55)
 
-[node name="寒冰射手" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_tdull")
+[node name="寒冰射手" type="Area2D"]
+script = ExtResource("42_jq6lo")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_jnere")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_8jlwm")

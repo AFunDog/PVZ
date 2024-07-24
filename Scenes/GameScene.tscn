@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://eregenxwdtif"]
+[gd_scene load_steps=13 format=3 uid="uid://eregenxwdtif"]
 
 [ext_resource type="Script" path="res://Scenes/GameScene.cs" id="1_1m5xf"]
 [ext_resource type="Texture2D" uid="uid://c4homel5vkoy2" path="res://Assets/场景/白天.png" id="2_qj6b4"]
@@ -7,7 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dw8m76kc66aj4" path="res://Assets/组件/铲子盒.png" id="4_jom51"]
 [ext_resource type="PackedScene" uid="uid://b12hcbu5rn31v" path="res://Controls/卡牌栏/卡牌栏.tscn" id="5_6lwjs"]
 [ext_resource type="PackedScene" uid="uid://3o4we2fpuxv2" path="res://Controls/僵尸按钮/僵尸按钮.tscn" id="5_uhdi5"]
+[ext_resource type="AudioStream" uid="uid://bk2usrd4th0ro" path="res://Music/shovel.wav" id="6_ngdmj"]
 [ext_resource type="PackedScene" uid="uid://dohsia1n6q14x" path="res://Controls/工具按钮/工具按钮.tscn" id="7_ucakd"]
+[ext_resource type="AudioStream" uid="uid://b0to7sovlns33" path="res://Music/viewScence.mp3" id="9_nijjg"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_ronjn"]
 texture = ExtResource("3_ten1g")
@@ -108,17 +110,20 @@ grow_vertical = 1
 unique_name_in_owner = true
 custom_minimum_size = Vector2(88, 70)
 layout_mode = 2
-toggle_mode = true
 action_mode = 0
 texture_normal = ExtResource("4_jom51")
 ignore_texture_size = true
 stretch_mode = 0
 
+[node name="ShovelBoxMusic" type="AudioStreamPlayer" parent="TopRectContainer/ShovelBox"]
+unique_name_in_owner = true
+stream = ExtResource("6_ngdmj")
+
 [node name="MainMenuButton" parent="TopRectContainer" instance=ExtResource("5_uhdi5")]
+unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 0
 size_flags_vertical = 0
-Content = "主菜单"
 
 [node name="GameCamera" type="Camera2D" parent="."]
 unique_name_in_owner = true
@@ -420,13 +425,17 @@ text = "请选择你的植物"
 horizontal_alignment = 1
 
 [node name="StartGameButton" parent="ChoseCardRect" instance=ExtResource("7_ucakd")]
+unique_name_in_owner = true
 layout_mode = 1
 offset_left = 626.0
 offset_top = 516.0
 offset_right = 754.0
 offset_bottom = 546.0
-Content = "开始游戏"
 
-[connection signal="toggled" from="TopRectContainer/ShovelBox" to="." method="OnShovelBoxClicked"]
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("9_nijjg")
+
+[connection signal="pressed" from="TopRectContainer/ShovelBox" to="." method="OnShovelBoxClicked"]
 [connection signal="Clicked" from="TopRectContainer/MainMenuButton" to="." method="MainMenuButtonClicked"]
 [connection signal="Clicked" from="ChoseCardRect/StartGameButton" to="." method="OnStartGameButtonClicked"]

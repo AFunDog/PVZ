@@ -9,5 +9,7 @@ namespace 植物大战僵尸.Entities
     public interface IZombie : IEntity
     {
         int Health { get; set; }
+
+        event Action<IZombie>? MoveToHome;
     }
 }

@@ -1,6 +1,7 @@
-[gd_scene load_steps=32 format=3 uid="uid://dhhvaah2cdfhl"]
+[gd_scene load_steps=33 format=3 uid="uid://dhhvaah2cdfhl"]
 
 [ext_resource type="Texture2D" uid="uid://yhv4rxp14mka" path="res://Assets/组件/阳光/阳光_0.png" id="1_jpdr8"]
+[ext_resource type="AudioStream" uid="uid://bl6ouxm06vueg" path="res://Music/collectSunshine.wav" id="2_0atdi"]
 [ext_resource type="Texture2D" uid="uid://b8lalominlmv3" path="res://Assets/组件/阳光/阳光_1.png" id="2_donqp"]
 [ext_resource type="Texture2D" uid="uid://cbs364ab8agj1" path="res://Assets/组件/阳光/阳光_2.png" id="3_ygqag"]
 [ext_resource type="Texture2D" uid="uid://btmjmhrg0x6m6" path="res://Assets/组件/阳光/阳光_3.png" id="4_2uo4i"]
@@ -138,6 +139,7 @@ script = ExtResource("30_51ejo")
 
 [node name="ClickMusic" type="AudioStreamPlayer" parent="."]
 unique_name_in_owner = true
+stream = ExtResource("2_0atdi")
 
 [node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true

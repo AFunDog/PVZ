@@ -21,7 +21,9 @@ public partial class GameScene : Control
     private Control? _cardContainer;
     private Control? _plantCardRect;
     private TextureButton? _shovelBox;
+    private AudioStreamPlayer? _shovelBoxMusic;
 
+    private AudioStreamPlayer? _bgm;
     private Timer? _sunShinetimer;
     private Timer? _zombieTimer;
 
@@ -59,6 +61,13 @@ public partial class GameScene : Control
             }
         };
 
+        var mainMenuButton = GetNode<僵尸按钮>("%MainMenuButton");
+        mainMenuButton.Text = "主菜单";
+        var startGameButton = GetNode<工具按钮>("%StartGameButton");
+        startGameButton.Text = "开始游戏";
+
+        _gameMap.GameLose += ToLoseGameState;
+
         _sunShinetimer = new Timer();
         _sunShinetimer.Timeout += GenerateSunShine;
         CallDeferred(MethodName.AddChild, _sunShinetimer);
@@ -88,6 +97,10 @@ public partial class GameScene : Control
         _plantCardRect = GetNode<Control>("%PlantCardRect");
 
         _shovelBox = GetNode<TextureButton>("%ShovelBox");
+        _shovelBoxMusic = GetNode<AudioStreamPlayer>("%ShovelBoxMusic");
+
+        _bgm = GetNode<AudioStreamPlayer>("%BGM");
+        _bgm.Play();
 
         SetCardData();
         Ready += ToChoseCardState;
@@ -124,32 +137,34 @@ public partial class GameScene : Control
         switch (@event)
         {
             case InputEventMouseButton mouseButton:
-                if (
-                    mouseButton.ButtonIndex == MouseButton.Left
-                    && mouseButton.Pressed
-                    && _isPlanting
-                )
+                if (mouseButton.ButtonIndex == MouseButton.Left && mouseButton.Pressed)
                 {
-                    using PackedScene scene = GD.Load<PackedScene>(
-                        _selectedCard!.CardData!.EntityInfo.ScenePath
-                    );
-                    var plant = scene.Instantiate<AnimatedSprite2D>();
-                    var pos = (Vector2I)mouseButton.Position / new Vector2I(90, 110);
-                    GD.Print(pos);
-                    if (
-                        _gameMap.PutPlant((plant as IPlant)!, pos.X, pos.Y)
-                        == PutPlantResult.Success
-                    )
+                    if (_isPlanting)
                     {
-                        SunShine -= _selectedCard.CardData.Cost;
-                        _selectedCard.RestCd = _selectedCard.CardData.Cd;
+                        using PackedScene scene = GD.Load<PackedScene>(
+                            _selectedCard!.CardData!.EntityInfo.ScenePath
+                        );
+                        var plant = scene.Instantiate<植物>();
+                        var pos = (Vector2I)mouseButton.Position / new Vector2I(90, 110);
+                        GD.Print(pos);
+                        if (_gameMap.PutPlant(plant, pos.X, pos.Y) == PutPlantResult.Success)
+                        {
+                            SunShine -= _selectedCard.CardData.Cost;
+                            _selectedCard.RestCd = _selectedCard.CardData.Cd;
 
-                        plant.Position = pos * new Vector2I(90, 110) + new Vector2I(45, 55);
-                        _gameMapContainer?.CallDeferred(MethodName.AddChild, plant);
-                        plant.Play();
+                            plant.Position = pos * new Vector2I(90, 110) + new Vector2I(45, 55);
+                            _gameMapContainer?.CallDeferred(MethodName.AddChild, plant);
+                            plant.Play();
+                        }
+
+                        CancelPlant();
                     }
-
-                    CancelPlant();
+                    else if (_isShovelBoxToggled)
+                    {
+                        var pos = (Vector2I)mouseButton.Position / new Vector2I(90, 110);
+                        GD.Print(_gameMap.RemovePlant(pos.X, pos.Y));
+                        ToPutDownShovelState();
+                    }
                 }
                 break;
             default:
@@ -234,6 +249,7 @@ public partial class GameScene : Control
             || _gameCamera is null
             || _sunShinetimer is null
             || _zombieTimer is null
+            || _bgm is null
         )
             return;
 
@@ -242,7 +258,7 @@ public partial class GameScene : Control
         {
             _cardToolbar.Cards[i].RestCd = _cardToolbar.Cards[i].CardData!.Cd;
         }
-
+        _bgm.Stop();
         Tween tween = CreateTween().SetTrans(Tween.TransitionType.Cubic);
         tween.TweenProperty(
             _choseCardRect,
@@ -252,6 +268,13 @@ public partial class GameScene : Control
                 Y = 648
             },
             0.6
+        );
+        tween.TweenCallback(
+            Callable.From(() =>
+            {
+                _bgm.Stream = GD.Load<AudioStream>("res://Music/readySetPlant.wav");
+                _bgm.Play();
+            })
         );
         tween.TweenProperty(
             _topRectContainer,
@@ -283,6 +306,11 @@ public partial class GameScene : Control
         IsGameStart = true;
     }
 
+    private void ToLoseGameState()
+    {
+        GetTree().ChangeSceneToPacked(SceneLibrary.MainScenePackage);
+    }
+
     private void GenerateSunShine()
     {
         var pos = Random.Shared.Next(120, 720);
@@ -299,7 +327,7 @@ public partial class GameScene : Control
         Span<int> collect = [110, 220, 330, 440, 550];
         var posY = Random.Shared.GetItems<int>(collect, 1)[0];
         var zombie = zombieScene.Instantiate<Node2D>();
-        zombie.Position = new Vector2(1280, posY);
+        zombie.Position = new Vector2(1200, posY);
         CallDeferred(MethodName.AddChild, zombie);
         _zombieTimer!.WaitTime = Math.Max(10, _zombieTimer.WaitTime * 0.9);
     }
@@ -406,21 +434,34 @@ public partial class GameScene : Control
         ToStartGameState();
     }
 
-    private void OnShovelBoxClicked(bool toggled)
+    private bool _isShovelBoxToggled = false;
+
+    // TODO 注意要之后把拿铲子和种植物的状态改为互斥
+
+    private void OnShovelBoxClicked()
     {
         if (!IsGameStart)
             return;
 
-        if (toggled)
-        {
-            _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/无铲子盒.png");
-            var image = GD.Load<Texture2D>("res://Assets/组件/铲子.png");
-            Input.SetCustomMouseCursor(image, hotspot: image.GetSize() / 2);
-        }
+        if (!_isShovelBoxToggled)
+            ToGetShovelState();
         else
-        {
-            _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/铲子盒.png");
-            Input.SetCustomMouseCursor(null);
-        }
+            ToPutDownShovelState();
+    }
+
+    private void ToGetShovelState()
+    {
+        _isShovelBoxToggled = true;
+        _shovelBoxMusic?.Play();
+        _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/无铲子盒.png");
+        var image = GD.Load<Texture2D>("res://Assets/组件/铲子.png");
+        Input.SetCustomMouseCursor(image, hotspot: image.GetSize() / 2);
+    }
+
+    private void ToPutDownShovelState()
+    {
+        _isShovelBoxToggled = false;
+        _shovelBox!.TextureNormal = GD.Load<Texture2D>("res://Assets/组件/铲子盒.png");
+        Input.SetCustomMouseCursor(null);
     }
 }

@@ -10,6 +10,7 @@ namespace 植物大战僵尸.Entities
     public partial class 僵尸 : Area2D, IZombie
     {
         private AnimatedSprite2D? _sprite2D;
+        private AudioStreamPlayer _hitMusic;
         private int _health = 270;
         public int Health
         {
@@ -38,14 +39,26 @@ namespace 植物大战僵尸.Entities
             }
         }
 
+        public override void _Ready()
+        {
+            _sprite2D = GetNode<AnimatedSprite2D>("%Sprite2D");
+            _hitMusic = GetNode<AudioStreamPlayer>("%HitMusic");
+        }
+
         public override void _PhysicsProcess(double delta)
         {
             Position = Position with { X = (float)(Position.X - MoveSpeed * delta) };
+            if (Position.X < -20)
+            {
+                MoveToHome?.Invoke(this);
+                MoveToHome = null;
+            }
         }
 
         private void OnZombieDied()
         {
             EntityDied?.Invoke(this);
+            EntityDied = null;
             _hitTimer?.Dispose();
             _hitTimer = null;
             _frozenTimer?.Dispose();
@@ -54,9 +67,11 @@ namespace 植物大战僵尸.Entities
         }
 
         public event Action<IEntity>? EntityDied;
+        public event Action<IZombie>? MoveToHome;
 
         private void OnAreaEntered(Area2D area)
         {
+            GD.Print(area);
             if (area is IBullet bullet)
             {
                 BeHit(bullet);
@@ -76,6 +91,7 @@ namespace 植物大战僵尸.Entities
             if (_sprite2D is null)
                 return;
 
+            _hitMusic?.Play();
             if (_hitTimer is not null)
             {
                 _hitTimer.TimeLeft = HitInterval;

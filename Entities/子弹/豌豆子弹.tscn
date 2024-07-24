@@ -10,6 +10,7 @@ radius = 14.0
 script = ExtResource("1_7ggiy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+unique_name_in_owner = true
 texture = ExtResource("1_1ryyk")
 
 [node name="CollisionPolygon2D" type="CollisionShape2D" parent="."]

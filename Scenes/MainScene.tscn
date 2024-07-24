@@ -40,7 +40,6 @@ texture_click_mask = ExtResource("4_s3ldw")
 
 [node name="BGM" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_gbtnl")
-volume_db = -20.0
 autoplay = true
 
 [node name="ButtonTabMusic" type="AudioStreamPlayer" parent="."]

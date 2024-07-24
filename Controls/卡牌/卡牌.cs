@@ -24,6 +24,7 @@ public partial class 卡牌 : TextureRect
     }
 
     private TextureProgressBar? _cdBar;
+    private AudioStreamPlayer? _cardLiftMusic;
 
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
@@ -32,6 +33,8 @@ public partial class 卡牌 : TextureRect
 
         _cdBar = GetNode<TextureProgressBar>("%CdBar");
         Texture = GD.Load<Texture2D>(CardData!.TexturePath);
+
+        _cardLiftMusic = GetNode<AudioStreamPlayer>("%CardLiftMusic");
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -45,8 +48,8 @@ public partial class 卡牌 : TextureRect
             case InputEventMouseButton mouseButton:
                 if (mouseButton.ButtonIndex == MouseButton.Left && mouseButton.Pressed)
                 {
+                    _cardLiftMusic?.Play();
                     Click?.Invoke(this);
-                    GD.Print("Clicked");
                 }
                 break;
         }

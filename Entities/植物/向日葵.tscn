@@ -61,7 +61,7 @@
 [ext_resource type="Texture2D" uid="uid://bnuwjjgbgyhii" path="res://Assets/植物/向日葵/向日葵0058.png" id="59_e2rsb"]
 [ext_resource type="Script" path="res://Entities/植物/向日葵.cs" id="60_gpa3e"]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_qsiry"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_121my"]
 animations = [{
 "frames": [{
 "duration": 1.0,
@@ -249,12 +249,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nqmas"]
 size = Vector2(66, 55)
 
-[node name="向日葵" type="AnimatedSprite2D"]
-sprite_frames = SubResource("SpriteFrames_qsiry")
+[node name="向日葵" type="Area2D"]
 script = ExtResource("60_gpa3e")
 
-[node name="Area2D" type="Area2D" parent="."]
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
 unique_name_in_owner = true
+sprite_frames = SubResource("SpriteFrames_121my")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_nqmas")

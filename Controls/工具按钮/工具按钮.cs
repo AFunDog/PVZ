@@ -12,8 +12,15 @@ public partial class 工具按钮 : Control
         "res://Controls/工具按钮/工具样式_高亮.tres"
     );
 
-    [Export]
-    public string Content { get; set; } = string.Empty;
+    public string? Text
+    {
+        get => _content?.Text;
+        set
+        {
+            if (_content is not null)
+                _content.Text = value;
+        }
+    }
 
     [Signal]
     public delegate void ClickedEventHandler();
@@ -22,7 +29,7 @@ public partial class 工具按钮 : Control
     public override void _Ready()
     {
         _content = GetNode<Label>("%Content");
-        _content.Text = Content;
+        _content.Text = Text;
 
         _container = GetNode<PanelContainer>("%Container");
         _container.GuiInput += OnPanelGuiInput;

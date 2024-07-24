@@ -2,13 +2,10 @@ using System;
 using Godot;
 using 植物大战僵尸.Entities;
 
-public partial class 向日葵 : AnimatedSprite2D, IPlant
+public partial class 向日葵 : 植物
 {
-    public int X { get; set; }
-    public int Y { get; set; }
-    public int Health { get; set; }
-
-    public event Action<IEntity>? EntityDied;
+    public override int MaxHealth { get; set; } = 300;
+    protected override AnimatedSprite2D? Sprite2D => GetNode<AnimatedSprite2D>("%Sprite2D");
 
     const double GenerateSunInterval = 20;
     private double _generateSunTime = 5;
@@ -16,9 +13,6 @@ public partial class 向日葵 : AnimatedSprite2D, IPlant
     private static readonly PackedScene _sunShinePackage = GD.Load<PackedScene>(
         "res://Entities/阳光.tscn"
     );
-
-    // Called when the node enters the scene tree for the first time.
-    public override void _Ready() { }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
     public override void _Process(double delta)

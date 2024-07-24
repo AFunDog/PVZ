@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://bi5gplcvwlogr"]
+[gd_scene load_steps=6 format=3 uid="uid://bi5gplcvwlogr"]
 
 [ext_resource type="Texture2D" uid="uid://3uk5ya3yqup2" path="res://Assets/卡牌/向日葵.png" id="1_7cr37"]
 [ext_resource type="Script" path="res://Controls/卡牌/卡牌.cs" id="2_1tfep"]
+[ext_resource type="AudioStream" uid="uid://bkvuo1i7i0emo" path="res://Music/cardLift.wav" id="3_p0651"]
 
 [sub_resource type="Gradient" id="Gradient_5wv70"]
 interpolation_mode = 1
@@ -33,3 +34,7 @@ grow_horizontal = 2
 grow_vertical = 2
 fill_mode = 2
 texture_progress = SubResource("GradientTexture2D_prj7c")
+
+[node name="CardLiftMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("3_p0651")

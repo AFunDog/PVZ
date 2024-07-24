@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://cs8hhhw2fk0k1"]
+[gd_scene load_steps=6 format=3 uid="uid://cs8hhhw2fk0k1"]
 
 [ext_resource type="Material" uid="uid://dh3vxpv1rwffy" path="res://Entities/僵尸/僵尸样式.tres" id="1_01bjn"]
 [ext_resource type="Script" path="res://Entities/僵尸/僵尸.cs" id="1_erb1i"]
 [ext_resource type="SpriteFrames" uid="uid://dtb64ewdjw07x" path="res://Entities/僵尸/普通僵尸.tres" id="3_5b8xc"]
+[ext_resource type="AudioStream" uid="uid://r7wkjywxaus0" path="res://Music/hit1.wav" id="4_i8w01"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hxj8t"]
 size = Vector2(52, 89)
@@ -19,8 +20,11 @@ autoplay = "walk"
 offset = Vector2(-20, 0)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2(0, 11)
 shape = SubResource("RectangleShape2D_hxj8t")
+
+[node name="HitMusic" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+stream = ExtResource("4_i8w01")
 
 [connection signal="area_entered" from="." to="." method="OnAreaEntered"]

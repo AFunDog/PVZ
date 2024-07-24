@@ -6,8 +6,16 @@ public partial class 僵尸按钮 : Control
     private Label? _content;
     private Container? _container;
 
-    [Export]
-    public string Content { get; set; } = string.Empty;
+    //[Export]
+    public string? Text
+    {
+        get => _content?.Text;
+        set
+        {
+            if (_content is not null)
+                _content.Text = value;
+        }
+    }
 
     [Signal]
     public delegate void ClickedEventHandler();
@@ -16,7 +24,7 @@ public partial class 僵尸按钮 : Control
     public override void _Ready()
     {
         _content = GetNode<Label>("%Content");
-        _content.Text = Content;
+        _content.Text = Text;
 
         _container = GetNode<Container>("%Container");
         _container.GuiInput += OnPanelGuiInput;

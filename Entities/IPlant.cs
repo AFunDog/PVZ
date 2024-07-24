@@ -10,6 +10,7 @@ namespace 植物大战僵尸.Entities
     {
         int X { get; set; }
         int Y { get; set; }
+        int MaxHealth { get; set; }
         int Health { get; set; }
     }
 }
